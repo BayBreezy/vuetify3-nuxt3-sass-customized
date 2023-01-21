@@ -1,0 +1,11 @@
+$family: "Inter var", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+@use "vuetify/settings" with (
+	$body-font-family: $family,
+	$button-border-radius: 8px,
+	$button-font-weight: 600,
+	$tooltip-border-radius: 8px,
+	$tooltip-font-size: 13px,
+	$tooltip-padding: 3px 12px,
+	$field-border-radius: 8px
+);
