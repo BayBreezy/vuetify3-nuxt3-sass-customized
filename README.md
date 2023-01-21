@@ -4,6 +4,10 @@
 
 Thanks to [Mohammad Hosein Feizi](https://github.com/mhfeizi) for the temporary solution provided here [Github link](https://github.com/nuxt/nuxt/issues/15412#issuecomment-1398110500). The Errors are now gone from the console
 
+### Demo
+
+Demo can be found here https://v3customized.behonbaker.com/
+
 ## # The code that helped
 
 - Create a Nitro plugin at `server/plugins/vuetify.fix.ts`
