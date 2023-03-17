@@ -91,6 +91,8 @@
 </template>
 
 <script setup lang="ts">
+import { DummyUser } from "@/types";
+
 const selected = ref([]);
 const search = ref("");
 
@@ -102,10 +104,13 @@ const headers = ref([
   { title: "Actions", key: "actions", sortable: false },
 ]);
 
-const { data: customers } = await useAsyncData(() => $fetch("https://dummyjson.com/users"), {
-  default: () => [],
-  transform: (data: any) => data.users,
-});
+const { data: customers } = await useAsyncData<DummyUser[]>(
+  () => $fetch("https://dummyjson.com/users"),
+  {
+    default: () => [],
+    transform: (data: any) => data.users,
+  }
+);
 
 const formatCurrency = (val: number) => {
   return new Intl.NumberFormat("en-US", {
