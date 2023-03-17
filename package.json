@@ -3,19 +3,20 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
+    "clean": "rm -rf .nuxt dist node_modules package-lock.json yarn.lock && npm i",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@iconify/vue": "^4.1.0",
     "@kevinmarrec/nuxt-pwa": "^0.15.0",
-    "nuxt": "^3.0.0",
-    "nuxt-icon": "^0.2.6",
-    "sass": "^1.57.1"
+    "nuxt": "^3.3.1",
+    "sass": "^1.59.3"
   },
   "dependencies": {
     "dayjs": "^1.11.7",
-    "vite-plugin-vuetify": "^1.0.1",
-    "vuetify": "^3.1.2"
+    "vite-plugin-vuetify": "^1.0.2",
+    "vuetify": "^3.1.10"
   }
 }
