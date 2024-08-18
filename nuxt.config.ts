@@ -9,15 +9,19 @@ const url = "https://v3customized.behonbaker.com/";
 export default defineNuxtConfig({
   // Enable takeover mode for better DX
   typescript: { shim: false },
+
   // we have to transpile vuetify
   build: { transpile: ["vuetify"] },
+
   // disable sourcemap so the terminal warnings go away
   sourcemap: {
     client: false,
     server: false,
   },
+
   // import styles
   css: ["vuetify/styles", "@/assets/main.scss"],
+
   modules: [
     "@kevinmarrec/nuxt-pwa",
     async (options, nuxt) => {
@@ -31,6 +35,7 @@ export default defineNuxtConfig({
       );
     },
   ],
+
   // head config
   app: {
     head: {
@@ -102,6 +107,7 @@ export default defineNuxtConfig({
       ],
     },
   },
+
   pwa: {
     meta: {
       name: shortTitle,
@@ -116,4 +122,6 @@ export default defineNuxtConfig({
       description: description,
     },
   },
+
+  compatibilityDate: "2024-08-18",
 });
