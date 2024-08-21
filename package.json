@@ -1,6 +1,8 @@
 {
-  "private": true,
+  "name": "vuetify3-nuxt3-sass-customized",
+  "private": false,
   "scripts": {
+    "generate-pwa-assets": "pwa-assets-generator --preset minimal-2023 public/icons/icon.png",
     "build": "nuxt build",
     "clean": "rm -rf .nuxt dist node_modules package-lock.json yarn.lock && npm i",
     "dev": "nuxt dev",
@@ -9,13 +11,15 @@
     "preview": "nuxt preview"
   },
   "dependencies": {
-    "dayjs": "^1.11.12",
+    "dayjs": "^1.11.13",
     "vite-plugin-vuetify": "^2.0.4",
     "vuetify": "^3.7.0"
   },
   "devDependencies": {
     "@iconify/vue": "^4.1.2",
-    "@kevinmarrec/nuxt-pwa": "^0.17.0",
+    "@paro-paro/vite-plugin-vuetify-sass": "^0.6.3",
+    "@vite-pwa/assets-generator": "^0.2.4",
+    "@vite-pwa/nuxt": "^0.10.0",
     "nuxt": "^3.12.4",
     "sass": "^1.77.8"
   }
