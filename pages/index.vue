@@ -49,27 +49,27 @@
           >
             <template v-slot:item.name="{ item }">
               <div class="d-flex my-3">
-                <VAvatar size="48" color="primary-lighten-4" :image="item.raw.image" />
+                <VAvatar size="48" color="primary-lighten-4" :image="item.image" />
                 <div class="ml-4">
                   <p class="text-body-1 font-weight-medium">
-                    {{ item.raw.firstName }} {{ item.raw.lastName }}
+                    {{ item.firstName }} {{ item.lastName }}
                   </p>
-                  <span class="text-medium-emphasis text-body-2">{{ item.raw.email }}</span>
+                  <span class="text-medium-emphasis text-body-2">{{ item.email }}</span>
                 </div>
               </div>
             </template>
             <template v-slot:item.address="{ item }">
               <div class="my-3">
                 <p class="text-body-2">
-                  {{ item.raw.address.address }}, {{ item.raw.address.city }}
-                  {{ item.raw.address.state }}
+                  {{ item.address.address }}, {{ item.address.city }}
+                  {{ item.address.state }}
                 </p>
               </div>
             </template>
             <template v-slot:item.spent="{ item }">
               <div class="d-flex my-3">
                 <p class="text-body-2">
-                  {{ formatCurrency(item.raw.age * 555) }}
+                  {{ formatCurrency(item.age * 555) }}
                 </p>
               </div>
             </template>
@@ -91,7 +91,7 @@
 </template>
 
 <script setup lang="ts">
-import { DummyUser } from "@/types";
+import { type DummyUser } from "@/types";
 
 const selected = ref([]);
 const search = ref("");
