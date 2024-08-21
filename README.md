@@ -2,22 +2,16 @@
 
 ![Desktop](/public/screenshot.png)
 
-Thanks to [Mohammad Hosein Feizi](https://github.com/mhfeizi) for the temporary solution provided here [Github link](https://github.com/nuxt/nuxt/issues/15412#issuecomment-1398110500). The Errors are now gone from the console
+## Netlify Status
 
-### Demo
+Yes, it is deployed on Netlify.
 
-Demo can be found here https://v3customized.behonbaker.com/
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4c48fbab-db45-4a4d-b962-c9d624b75a55/deploy-status)](https://app.netlify.com/sites/genuine-smakager-e40a9a/deploys)
 
-## # The code that helped
+## Demo
 
-- Create a Nitro plugin at `server/plugins/vuetify.fix.ts`
+Demo can be found here --> **[Live Demo](https://v3customized.behonbaker.com/)**
 
-- Add this to the plugin
+## Getting Started
 
-```ts
-export default defineNitroPlugin((nitroApp) => {
-	nitroApp.hooks.hook("render:response", (response: any) => {
-		response.body = response.body.replaceAll("/_nuxt/\0", "/_nuxt/");
-	});
-});
-```
+You can just clone the repository and start working on it.
