@@ -2,11 +2,11 @@
   "name": "vuetify3-nuxt3-sass-customized",
   "private": false,
   "scripts": {
-    "generate-pwa-assets": "pwa-assets-generator --preset minimal-2023 public/icons/icon.png",
     "build": "nuxt build",
     "clean": "rm -rf .nuxt dist node_modules package-lock.json yarn.lock && npm i",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
+    "generate-pwa-assets": "pwa-assets-generator --preset minimal-2023 public/icons/icon.png",
     "postinstall": "nuxt prepare",
     "preview": "nuxt preview"
   },
