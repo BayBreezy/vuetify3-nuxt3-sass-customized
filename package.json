@@ -20,7 +20,7 @@
     "@paro-paro/vite-plugin-vuetify-sass": "^0.6.3",
     "@vite-pwa/assets-generator": "^0.2.4",
     "@vite-pwa/nuxt": "^0.10.1",
-    "nuxt": "^3.12.4",
+    "nuxt": "^3.13.0",
     "sass": "^1.77.8"
   }
 }
