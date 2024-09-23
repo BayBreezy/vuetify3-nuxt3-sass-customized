@@ -13,7 +13,7 @@
   "dependencies": {
     "dayjs": "^1.11.13",
     "vite-plugin-vuetify": "^2.0.4",
-    "vuetify": "^3.7.1"
+    "vuetify": "^3.7.2"
   },
   "devDependencies": {
     "@iconify/vue": "^4.1.2",
