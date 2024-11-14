@@ -13,6 +13,8 @@
   "dependencies": {
     "dayjs": "^1.11.13",
     "vite-plugin-vuetify": "^2.0.4",
+    "vue": "latest",
+    "vue-router": "latest",
     "vuetify": "^3.7.4"
   },
   "devDependencies": {
@@ -21,6 +23,6 @@
     "@vite-pwa/assets-generator": "^0.2.6",
     "@vite-pwa/nuxt": "^0.10.6",
     "nuxt": "^3.14.159",
-    "sass": "^1.80.6"
+    "sass": "^1.80.7"
   }
 }
